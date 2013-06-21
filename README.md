@@ -1,4 +1,4 @@
-Curso Intencivo de C#
+Curso Intensivo de C#
 
-Aqui encontraras todas las actividades que se estaran realizando durante el curso.
-Proximamente curso intencivo de PHP.
+Aquí encontraras todas las actividades que se estarán realizando durante el curso.
+Próximamente curso intensivo de PHP.
