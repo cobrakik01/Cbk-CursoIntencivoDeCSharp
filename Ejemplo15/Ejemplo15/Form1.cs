@@ -52,5 +52,35 @@ namespace Ejemplo15
             MostrarLibros v = new MostrarLibros();
             v.ShowDialog(this);
         }
+
+        internal void LibroSeleccionado(string titulo)
+        {
+            if (listaLibros.Keys.Contains(titulo))
+            {
+                Libro lib = listaLibros[titulo];
+                this.LibroSeleccionado(lib);
+            }
+        }
+
+        internal void LibroSeleccionado(Libro lib)
+        {
+            txtTitulo.Text = lib.Titulo;
+            txtAutor.Text = lib.Autor;
+            txtEditorial.Text = lib.Editorial;
+            txtDescripcion.Text = lib.Descripcion;
+        }
+
+        internal void eliminar(string titulo)
+        {
+            if (listaLibros.Keys.Contains(titulo))
+            {
+
+                if (listaLibros.Remove(titulo))
+                {
+                    MessageBox.Show("El libro" + titulo + "se ha eliminado");
+                }
+
+            }
+        }
     }
 }
